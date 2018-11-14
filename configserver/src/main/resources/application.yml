@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/PureDreamCN/config-repo/
+          search-paths: Downloads
+      label: master
+server:
+  port: 8081
